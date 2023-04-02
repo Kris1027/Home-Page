@@ -5,8 +5,9 @@ body {
 
 .wrapper {
     @include setFlex(column, center, center);
-    width: 100%;
+    width: 50%;
     height: 100%;
+    margin: 0 auto 0 auto;
     padding: 20px;
     color: #000;
 
