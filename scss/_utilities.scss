@@ -1,0 +1,22 @@
+$raisin-black: #242331;
+$cafe-noir: #533E2D;
+$golden-brown: #A27035;
+$lion: #B88B4A;
+$citron: #DDCA7D;
+
+@mixin setFlex($flex-direction, $justify-content, $align-items) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+@mixin headingBG {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
