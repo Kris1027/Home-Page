@@ -5,6 +5,8 @@ $lion: #B88B4A;
 $citron: #DDCA7D;
 
 @mixin setFlex($flex-direction, $justify-content, $align-items) {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     flex-direction: $flex-direction;
