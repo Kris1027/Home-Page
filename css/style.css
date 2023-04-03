@@ -17,11 +17,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 100%;
   height: 100%;
   margin: 0 auto 0 auto;
   padding: 20px;
   color: #000;
+}
+@media (max-width: 640px) {
+  .wrapper {
+    padding: 0;
+  }
 }
 .wrapper__heading {
   background: rgba(255, 255, 255, 0.7);
@@ -33,6 +38,13 @@ body {
   margin: 20px;
   text-align: center;
   padding: 5px;
+}
+@media (max-width: 640px) {
+  .wrapper__heading {
+    font-size: 15px;
+    margin: 5px;
+    padding: 2px;
+  }
 }
 
 .category {
@@ -53,12 +65,20 @@ body {
   text-align: center;
   padding: 5px;
 }
+@media (max-width: 640px) {
+  .category__heading {
+    font-size: 15px;
+    margin: 5px;
+    padding: 2px;
+  }
+}
 .category__pages {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 85vw;
 }
 
 .page {
@@ -66,9 +86,15 @@ body {
 }
 .page__image {
   width: 150px;
-  height: 50px;
+  height: 65px;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.75);
+}
+@media (max-width: 640px) {
+  .page__image {
+    width: 100px;
+    height: 40px;
+  }
 }
 .page:hover {
   transform: scale(130%);
