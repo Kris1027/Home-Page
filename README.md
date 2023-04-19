@@ -16,4 +16,4 @@
     <li>?</li>
 </ul>
 
-<img src: "https://raw.githubusercontent.com/Kris1027/Home-Page/main/image/homepage%20screen.png">
+<img src: "https://kris1027.github.io/Home-Page/images/homepagescreen.png">
