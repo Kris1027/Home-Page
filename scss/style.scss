@@ -10,20 +10,28 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    overflow-x: hidden;
 }
 
 .wrapper {
+    position: relative;
+    left: -200vh;
     display: flex;
     flex-wrap: wrap;
     gap: .1rem;
     justify-content: center;
     max-width: 1025px;
     margin: 20px auto;
+    transition: .3s linear;
+}
+
+.wrapper.active {
+    left: 0;
 }
 
 .link {
     position: relative;
-    transition: .2s linear;
+    transition: .1s linear;
 
     &__image {
         width: 200px;
@@ -31,7 +39,7 @@ body {
     }
 
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.5) rotate(0deg);
         z-index: 1;
     }
 }
