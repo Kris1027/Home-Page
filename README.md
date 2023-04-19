@@ -1,5 +1,3 @@
-<a href="https://kris1027.github.io/Home-Page/">Home Page</a>
-
 <h1>My personal Home page</h1>
 <ul>
     <li>HTML</li>
