@@ -16,4 +16,4 @@
     <li>?</li>
 </ul>
 
-<img src:"https://bi.im-g.pl/im/c9/14/1c/z29442249NWJ,Kot-domowy-.jpg">
+![homepage screen](https://user-images.githubusercontent.com/120410235/233204426-5a2a4dee-f1aa-45c3-9766-c18addf0e5a4.png)
