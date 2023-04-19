@@ -3,12 +3,14 @@
     <li>HTML</li>
     <li>CSS</li>
     <li>SCSS</li>
+    <li>JavaScript</li>
 </ul>
 
 <h2>Done:</h2>
 <ul>
     <li>Responsive layout</li>
-    <li>Hover Animation</li>
+    <li>Hover animation</li>
+    <li>Start animation</li>
 </ul>
 
 <h3>What else?</h3>
