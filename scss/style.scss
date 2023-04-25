@@ -22,7 +22,6 @@ body {
     justify-content: center;
     max-width: 1025px;
     margin: 20px auto;
-    transition: .3s linear;
 }
 
 .wrapper.active {
@@ -39,7 +38,7 @@ body {
     }
 
     &:hover {
-        transform: scale(1.5) rotate(0deg);
         z-index: 1;
+        transform: scale(1.5);
     }
 }
