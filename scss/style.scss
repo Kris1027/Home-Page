@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@100;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Pathway Extreme', sans-serif;
+}
+
 body {
+    display: flex;
     background-color: #000;
     background-image: url("../image/background.png");
     background-attachment: fixed;
@@ -19,9 +26,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: .1rem;
-    justify-content: center;
+    justify-content: flex-start;
     max-width: 1025px;
-    margin: 20px auto;
 }
 
 .wrapper.active {
@@ -41,4 +47,23 @@ body {
         z-index: 1;
         transform: scale(1.5);
     }
+}
+
+.todolist {
+    margin: 10px;
+    &__text {
+        width: 300px;
+        height: 70px;
+        font-size: 2rem;
+    }
+    &__btn {
+        width: 300px;
+        height: 50px;
+    }
+}
+
+.listStyle {
+    color: #fff;
+    font-size: 2rem;
+    margin: 10px;
 }
