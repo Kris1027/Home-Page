@@ -89,11 +89,10 @@ body {
   transition: 0.5s;
 }
 .todolist__icon:hover {
-  transform: scale(1.5);
-  color: red;
+  transform: scale(2);
+  color: rgb(255, 0, 0);
 }
 
 .selected {
   list-style-type: "✓";
-  color: green;
 }/*# sourceMappingURL=style.css.map */

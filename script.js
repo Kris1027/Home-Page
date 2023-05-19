@@ -32,7 +32,7 @@ const addList = (e) => {
         trashIcon.className = 'todolist__icon fa-solid fa-trash';
         listItem.appendChild(trashIcon);
         listItem.classList.add('selected');
-        listItem.style.color = 'red';
+        listItem.style.color = 'greenyellow';
         listItem.style.textDecoration = 'line-through';
     })
 
@@ -40,6 +40,7 @@ const addList = (e) => {
         listItem.style.textDecoration = 'none';
         listItem.style.color = 'white';
         listItem.classList.remove('selected');
+        listItem.removeChild(trashIcon);
     })
 
     trashIcon.addEventListener('click', () => {

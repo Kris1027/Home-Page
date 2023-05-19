@@ -89,13 +89,12 @@ body {
         font-size: 1rem;
         transition: .5s;
         &:hover {
-            transform: scale(1.5);
-            color: red;
+            transform: scale(2);
+            color: rgb(255, 0, 0);
         }
     }
 }
 
 .selected {
     list-style-type: '\2713';
-    color: green;
 }
