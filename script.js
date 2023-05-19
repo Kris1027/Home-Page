@@ -1,8 +1,12 @@
+// move links animation
+
 const wrapper = document.querySelector('.wrapper');
 
 window.addEventListener('mousemove', () => {
     wrapper.classList.add('active');
 })
+
+// ToDoList
 
 const input = document.querySelector('.todolist__text');
 const btn = document.querySelector('.todolist');
