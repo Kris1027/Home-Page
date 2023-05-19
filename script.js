@@ -28,27 +28,32 @@ const addList = (e) => {
     listItem.innerHTML = `${input.value}`;
     input.value = '';
 
-    listItem.addEventListener('click', () => {
+    const jobdone = () => {
         trashIcon.className = 'todolist__icon fa-solid fa-trash';
         listItem.appendChild(trashIcon);
         listItem.classList.add('selected');
         listItem.style.color = 'greenyellow';
         listItem.style.textDecoration = 'line-through';
-    })
+        listItem.style.transition = '.5s linear';
+    }
 
-    listItem.addEventListener('dblclick', () => {
+    const jobReturn = () => {
         listItem.style.textDecoration = 'none';
         listItem.style.color = 'white';
         listItem.classList.remove('selected');
         listItem.removeChild(trashIcon);
-    })
+    }
 
-    trashIcon.addEventListener('click', () => {
+    const jobRemove = () => {
         const confirmed = confirm('Are you sure to remove this list?');
         if (confirmed) {
         list.removeChild(listItem);
         }
-    })
+    }
+
+    listItem.addEventListener('click', jobdone);
+    listItem.addEventListener('dblclick', jobReturn);
+    trashIcon.addEventListener('click', jobRemove);
 }
 
 input.addEventListener('click', placeholder);
