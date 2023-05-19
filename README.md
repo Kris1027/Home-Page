@@ -11,7 +11,13 @@
     <li>Responsive layout</li>
     <li>Hover animation</li>
     <li>Start animation</li>
-    <li>To Do List</li>
+    <li>To Do List
+        <ul>
+            <li>one click on the list - job done</li>
+            <li>double click on the list - job again active</li>
+            <li>click on trash icon - remove job</li>
+        </ul>
+    </li>
 </ul>
 
 <h3>What else?</h3>
