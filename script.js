@@ -2,9 +2,11 @@
 
 const wrapper = document.querySelector('.wrapper');
 
-window.addEventListener('mousemove', () => {
+const linksAnimation = () => {
     wrapper.classList.add('active');
-})
+}
+
+window.addEventListener('mousemove', linksAnimation);
 
 // ToDoList
 
@@ -12,15 +14,24 @@ const input = document.querySelector('.todolist__text');
 const btn = document.querySelector('.todolist');
 const list = document.querySelector('.todolist__list');
 
+const placeholder = () => {
+    input.value = '';
+    input.style.opacity = '1';
+}
+
 const addList = (e) => {
     e.preventDefault();
     const listItem = document.createElement('li');
-    list.appendChild(listItem)
-    listItem.classList.add('listStyle')
-    listItem.textContent = input.value;
+    const trashIcon = document.createElement('i');
+    list.appendChild(listItem);
+    listItem.className = 'todolist__list-item'
+    listItem.innerHTML = `${input.value}`;
     input.value = '';
 
     listItem.addEventListener('click', () => {
+        trashIcon.className = 'todolist__icon fa-solid fa-trash';
+        listItem.appendChild(trashIcon);
+        listItem.classList.add('selected');
         listItem.style.color = 'red';
         listItem.style.textDecoration = 'line-through';
     })
@@ -28,7 +39,17 @@ const addList = (e) => {
     listItem.addEventListener('dblclick', () => {
         listItem.style.textDecoration = 'none';
         listItem.style.color = 'white';
+        listItem.classList.remove('selected');
+    })
+
+    trashIcon.addEventListener('click', () => {
+        const confirmed = confirm('Are you sure to remove this list?');
+        if (confirmed) {
+        list.removeChild(listItem);
+        }
     })
 }
 
+input.addEventListener('click', placeholder);
 btn.addEventListener('submit', addList);
+
