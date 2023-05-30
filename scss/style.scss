@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@100;400;700&display=swap');
 
+@mixin wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 1025px;
+    margin: 0 auto;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,13 +30,10 @@ body {
 }
 
 .wrapper {
+    @include wrapper;
     position: relative;
     left: -200vh;
-    display: flex;
-    flex-wrap: wrap;
     gap: .1rem;
-    max-width: 1025px;
-    margin: 0 auto;
     transition: .2s;
 }
 
@@ -52,11 +57,7 @@ body {
 }
 
 .todolist {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    max-width: 1025px;
-    margin: 0 auto;
+    @include wrapper;
     &__title {
         flex-basis: 100%;
         color: #fff;
@@ -78,11 +79,15 @@ body {
         cursor: pointer;
     }
     &__list-item {
+        padding: 5px;
         text-align: start;
         color: #fff;
-        font-size: 2rem;
+        font-size: 1.3rem;
         margin: 20px;
         cursor: pointer;
+        // &:hover {
+            // something I want do here!!!
+        // }
     }
     &__icon {
         margin-left: 10px;
@@ -97,4 +102,20 @@ body {
 
 .selected {
     list-style-type: '\2713';
+}
+
+.wrapper-notePad {
+    @include wrapper;
+    &__title {
+        flex-basis: 100%;
+        color: #fff;
+        text-align: center;
+    }
+    &__note {
+        font-size: 1.3rem;
+        background-color: gray;
+        &:focus {
+            outline: none;
+        }
+    }
 }

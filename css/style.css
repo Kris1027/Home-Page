@@ -22,13 +22,14 @@ body {
 }
 
 .wrapper {
-  position: relative;
-  left: -200vh;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.1rem;
+  text-align: center;
   max-width: 1025px;
   margin: 0 auto;
+  position: relative;
+  left: -200vh;
+  gap: 0.1rem;
   transition: 0.2s;
 }
 
@@ -77,9 +78,10 @@ body {
   cursor: pointer;
 }
 .todolist__list-item {
+  padding: 5px;
   text-align: start;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin: 20px;
   cursor: pointer;
 }
@@ -95,4 +97,24 @@ body {
 
 .selected {
   list-style-type: "✓";
+}
+
+.wrapper-notePad {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  max-width: 1025px;
+  margin: 0 auto;
+}
+.wrapper-notePad__title {
+  flex-basis: 100%;
+  color: #fff;
+  text-align: center;
+}
+.wrapper-notePad__note {
+  font-size: 1.3rem;
+  background-color: gray;
+}
+.wrapper-notePad__note:focus {
+  outline: none;
 }/*# sourceMappingURL=style.css.map */

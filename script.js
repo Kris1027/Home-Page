@@ -59,3 +59,5 @@ const addList = (e) => {
 input.addEventListener('click', placeholder);
 btn.addEventListener('submit', addList);
 
+// Notepad
+
