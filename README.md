@@ -18,12 +18,13 @@
             <li>click on trash icon - remove job</li>
         </ul>
     </li>
+    <li>Note pad</li>
 </ul>
 
 <h3>What else?</h3>
 <ul>
     <li>More style to ToDoList</li>
-    <li>Remove button ToDoList</li>
+    <li>style notepad</li>
 </ul>
 
 ![homepage screen](https://user-images.githubusercontent.com/120410235/233204426-5a2a4dee-f1aa-45c3-9766-c18addf0e5a4.png)
