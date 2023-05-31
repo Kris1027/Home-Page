@@ -25,7 +25,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  max-width: 1025px;
+  max-width: 1024px;
   margin: 0 auto;
   position: relative;
   left: -200vh;
@@ -54,7 +54,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  max-width: 1025px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 .todolist__title {
@@ -68,6 +68,9 @@ body {
   opacity: 0.5;
   background-color: transparent;
   font-size: 2rem;
+}
+.todolist__text:focus {
+  outline: none;
 }
 .todolist__btn {
   flex-basis: 100%;
@@ -103,15 +106,30 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  max-width: 1025px;
+  max-width: 1024px;
   margin: 0 auto;
+  align-content: start;
 }
 .wrapper-notePad__title {
   flex-basis: 100%;
   color: #fff;
   text-align: center;
 }
+.wrapper-notePad__btn {
+  flex-basis: 16.66%;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.wrapper-notePad__btn:nth-child(2) {
+  font-weight: 700;
+}
+.wrapper-notePad__btn:nth-child(3) {
+  font-style: italic;
+}
 .wrapper-notePad__note {
+  flex-basis: 100%;
+  margin: 0 auto;
   font-size: 1.3rem;
   background-color: gray;
 }

@@ -61,3 +61,29 @@ btn.addEventListener('submit', addList);
 
 // Notepad
 
+let note = document.querySelector('.wrapper-notePad__note');
+const noteButtons = document.querySelectorAll('.wrapper-notePad__btn');
+
+let Size = 0.3;
+
+function noteActions() {
+    if (this.textContent === 'Clear') {
+        note.value = '';
+    } else if (this.textContent === 'B') {
+        note.style.fontWeight = 'bold';
+    } else if (this.textContent === 'I') {
+        note.style.fontStyle = 'italic';
+    } else if (this.textContent === '_') {
+        note.style.textDecoration = 'underline';
+    } else if (this.textContent === '-') {
+        let currentFontSize = parseFloat(getComputedStyle(note).fontSize);
+        let newFontSize = currentFontSize - Size;
+        note.style.fontSize = newFontSize + 'px';
+    } else if (this.textContent === '+') {
+        let currentFontSize = parseFloat(getComputedStyle(note).fontSize);
+        let newFontSize = currentFontSize + Size;
+        note.style.fontSize = newFontSize + 'px';
+    }     
+}
+
+noteButtons.forEach(button => button.addEventListener('click', noteActions));
