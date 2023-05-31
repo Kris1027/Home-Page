@@ -28,3 +28,5 @@
 </ul>
 
 ![homepage screen](https://user-images.githubusercontent.com/120410235/233204426-5a2a4dee-f1aa-45c3-9766-c18addf0e5a4.png)
+
+![Zrzut ekranu 2023-05-31 o 11 33 12](https://github.com/Kris1027/Home-Page/assets/120410235/fdba61e3-494f-421e-a965-69d9f69437d6)
