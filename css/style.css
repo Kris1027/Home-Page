@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@100;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Pathway Extreme", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  background-image: url("../image/background.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  left: -200vh;
+  gap: 0.1rem;
+  transition: 0.2s;
+}
+
+.wrapper.active {
+  left: 0;
+}
+
+.link {
+  position: relative;
+  transition: 0.2s linear;
+}
+.link__image {
+  width: 200px;
+  height: 60px;
+}
+.link:hover {
+  z-index: 1;
+  transform: scale(1.5);
+}
+
+.todolist {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.todolist__title {
+  flex-basis: 100%;
+  color: #fff;
+}
+.todolist__text {
+  flex-basis: 100%;
+  height: 70px;
+  color: #fff;
+  opacity: 0.5;
+  background-color: transparent;
+  font-size: 2rem;
+}
+.todolist__text:focus {
+  outline: none;
+}
+.todolist__btn {
+  flex-basis: 100%;
+  height: 50px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.todolist__list-item {
+  padding: 5px;
+  text-align: start;
+  color: #fff;
+  font-size: 1.3rem;
+  margin: 20px;
+  cursor: pointer;
+}
+.todolist__icon {
+  margin-left: 10px;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+.todolist__icon:hover {
+  transform: scale(2);
+  color: rgb(255, 0, 0);
+}
+
+.selected {
+  list-style-type: "✓";
+}
+
+.wrapper-notePad {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  align-content: start;
+}
+.wrapper-notePad__title {
+  flex-basis: 100%;
+  color: #fff;
+  text-align: center;
+}
+.wrapper-notePad__btn {
+  flex-basis: 16.66%;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.wrapper-notePad__btn:nth-child(2) {
+  font-weight: 700;
+}
+.wrapper-notePad__btn:nth-child(3) {
+  font-style: italic;
+}
+.wrapper-notePad__note {
+  flex-basis: 100%;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  background-color: gray;
+}
+.wrapper-notePad__note:focus {
+  outline: none;
+}/*# sourceMappingURL=style.css.map */

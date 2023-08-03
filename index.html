@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper"></div>
+    <div class="wrapper-todolist">
+      <form class="todolist">
+        <h1 class="todolist__title">ToDoList</h1>
+        <input
+          class="todolist__text"
+          type="text"
+          value="What you need to do?"
+        />
+        <input class="todolist__btn" type="submit" value="Add" />
+        <div class="todolist__content">
+          <ul class="todolist__list"></ul>
+        </div>
+      </form>
+    </div>
+    <div class="wrapper-notePad">
+      <h1 class="wrapper-notePad__title">NotePad</h1>
+      <button class="wrapper-notePad__btn">B</button>
+      <button class="wrapper-notePad__btn">I</button>
+      <button class="wrapper-notePad__btn">_</button>
+      <button class="wrapper-notePad__btn">-</button>
+      <button class="wrapper-notePad__btn">+</button>
+      <button class="wrapper-notePad__btn">Clear</button>
+      <textarea class="wrapper-notePad__note" cols="50" rows="10"></textarea>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
