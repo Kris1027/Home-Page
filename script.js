@@ -201,9 +201,24 @@ const webpages = [
   },
 ];
 
-// move links animation
-
 const wrapper = document.querySelector('.wrapper');
+
+const pagesList = webpages
+  .map(
+    (item) => `
+<div>
+  <a href="${item.link}">
+    <img src="${item.image}" alt="webpage link" />
+  </a>
+</div>
+`
+  )
+  .join(''); // Join the array elements into a single string
+
+// Append the generated HTML to the wrapper element
+wrapper.innerHTML = pagesList;
+
+// move links animation
 
 const linksAnimation = () => {
   wrapper.classList.add('active');
